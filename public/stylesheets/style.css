@@ -1,0 +1,192 @@
+body, html {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+    /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+}
+
+* {
+    outline: none;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: blanchedalmond;
+    overflow: auto;
+    min-width: 700px;
+    min-height: 700px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+}
+
+#title {
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -430px 0 0 -320px;
+}
+
+#area {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -320px;
+    /*border: 1px solid black;*/
+}
+
+#showFilseName {
+    width: 54%;
+    height: 90%;
+    display: inline-block;
+    padding: 5%;
+    overflow: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+#operate {
+    display: inline-block;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: top;
+    float: right;
+}
+
+#progressNumber {
+    background: #428bca;
+    width: 0;
+    height: 5%;
+}
+
+#progressArea {
+    background: #848484;
+    width: 90%;
+    height: 3%;
+    /*margin: 10% 0 5%;*/
+    overflow: hidden;
+    margin: 10% 5% 2%;
+}
+
+#progressNumber {
+    border: 0;
+    width: 0;
+    height: 100%;
+}
+
+.fileItem {
+    width: 15%;
+    height: auto;
+    text-align: center;
+}
+
+.tr {
+    margin-bottom: 5%;
+    padding: 5px 0;
+}
+
+#file_upload {
+    display: none;
+}
+
+#button {
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+span {
+    position: relative;
+    display: block;
+    margin-bottom: 20%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+#download input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 20px;
+}
+
+span:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    border: 1px solid aliceblue;
+}
+
+th {
+    background-color: #b9f9dc;
+    border: 1px solid aliceblue;
+}
+
+.tr_odd {
+    background-color: cornsilk;
+    border: 1px solid aliceblue;
+}
+
+.tr_odd:hover {
+    background-color: white;
+    border: 1px solid aliceblue;
+}
+
+.download {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    /*padding: 10px;*/
+    border-radius: 5px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.download:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#back {
+    width: 58px;
+    height: 13px;
+    line-height: 13px;
+    float: right;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: chartreuse;
+}

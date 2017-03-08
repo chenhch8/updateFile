@@ -1,0 +1,23 @@
+<%- include header %>
+
+<div id="showFilseName">
+    <table border="0"></table>
+</div>
+<div id="operate">
+    <div id="button">
+        <input type="file" id="file_upload"/>
+        <span id="file_upload_alt">Select File</span>
+        <span id="upload">Update</span>
+        <span id="cancle">Cancle</span>
+        <span id="download">
+            <form action="/download" method="get">
+                <input value="Download" type="submit" />
+            </form></span>
+    </div>
+    <div id="progressArea">
+        <div id="progressNumber"></div>
+    </div>
+    <font id="percent">0%</font>
+</div>
+
+<%- include footer %>

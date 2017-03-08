@@ -1,0 +1,29 @@
+<%- include header %>
+
+<table border="1" id="list">
+    <tr>
+        <th>文件名</th>
+        <th>文件类型</th>
+        <th>上传时间</th>
+        <th>文件大小</th>
+        <th>下载次数</th>
+        <th>下载</th>
+    </tr>
+    <% list.forEach(function (item, index) { %>
+        <tr class="tr_odd">
+            <td><%= item.name %></td>
+            <td><%= item.type %></td>
+            <td><%= item.date %></td>
+            <td><%= item.size %></td>
+            <td><%= item.download_time %></td>
+            <td>
+                <form action="http://localhost:3000/download/<%= item.name + '.' + item.type.toLowerCase() %>" method="GET">
+                    <input type="submit" value="download" class="download" />
+                </form>
+            </td>
+        </tr>
+    <% }) %>
+</table>
+<span id="back">Back</span>
+
+<%- include footer%>
